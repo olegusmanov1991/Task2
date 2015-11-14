@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="url_audi">http://home4cars.com/data_images/brands/audi/audi-03.jpg</string>
+	<string name="url_bmw">http://www.planwallpaper.com/static/images/0d52645bada4070a1e4d91fc6c2c4610x.jpg</string>
+	<string name="url_toyota">http://i.quto.ru/c533x400/51e40108856b3.jpeg</string>
+	<string name="url_mercedes_benz">http://www.mbencclub.ru/_nw/0/48740655.png</string>
+	<string name="url_ford">http://images.thecarconnection.com/med/2011-ford-taurus-4-door-sedan-limited-fwd-angular-front-exterior-view_100315876_m.jpg</string>
+	<string name="url_volkswagen">http://carrrsmag.com/data_images/models/volkswagen-passat/volkswagen-passat-05.jpg</string>
+	<string name="url_lada">http://www.localtrader.ru/media/upload/reviews/0001_54.jpg</string>
+	<string name="url_lexus">http://zombdrive.com/images/lexus-11.jpg</string>
+	<string name="url_ferrari">http://carrrsmag.com/data_images/makes/ferrari/ferrari-07.jpg</string>
+	<string name="url_kia">http://carrrsmag.com/data_images/makes/kia/kia-01.jpg</string>
+</resources>
