@@ -7,62 +7,69 @@ import android.content.Context;
  */
 public enum Cars
 {
-	AUDI(1, R.string.url_audi,
-			"Audi",
-			"Германия"),
-	BMW(2,
+	AUDI(0, R.string.url_audi,
+			R.string.name_audi,
+			R.string.country_audi),
+	BMW(1,
 			R.string.url_bmw,
-			"BMW",
-			"Германия"),
-	TOYOTA(3,
+			R.string.name_bmw,
+			R.string.country_bmw),
+	TOYOTA(2,
 			R.string.url_toyota,
-			"Toyota",
-			"Япония"),
-	MERCEDES_BENZ(4,
+			R.string.name_toyota,
+			R.string.country_toyota),
+	MERCEDES_BENZ(3,
 			R.string.url_mercedes_benz,
-			"Mercedez-Benz",
-			"Герамания"),
-	FORD(5,
+			R.string.name_mercedes_benz,
+			R.string.country_mercedes_benz),
+	FORD(4,
 			R.string.url_ford,
-			"Ford",
-			"США"),
-	VOLKSWAGEN(6,
+			R.string.name_ford,
+			R.string.country_ford),
+	VOLKSWAGEN(5,
 			R.string.url_volkswagen,
-			"Volkswagen",
-			"Германия"),
-	LADA(7,
+			R.string.name_volkswagen,
+			R.string.country_volkswagen),
+	LADA(6,
 			R.string.url_lada,
-			"Lada",
-			"Россия"),
-	LEXUS(8,
+			R.string.name_lada,
+			R.string.country_lada),
+	LEXUS(7,
 			R.string.url_lexus,
-			"Lexus",
-			"США"),
-	FERRARI(9,
+			R.string.name_lexus,
+			R.string.country_lexus),
+	FERRARI(8,
 			R.string.url_ferrari,
-			"Ferrari",
-			"Италия"),
-	KIA(10,
+			R.string.name_ferrari,
+			R.string.country_ferrari),
+	KIA(9,
 			R.string.url_kia,
-			"Kia Motors",
-			"Южная Корея");
+			R.string.name_kia,
+			R.string.country_kia);
 
 	private final int carPictureId;
+	private final int carBrandId;
+	private final int carCountryId;
 
-	Cars(int n, int picId, String br, String co)
+	Cars(int n, int picId, int brId, int coId)
 	{
 		carNumber = n;
 		carPictureId = picId;
-		carCountry = co;
-		carBrand = br;
-	}
-
-	public final String getName(Context context){
-		return context.getString(carPictureId);
+		carCountryId = coId;
+		carBrandId = brId;
 	}
 
 	public final int carNumber;
-	public final String carCountry;
-	public final String carBrand;
-
+	public final String getName(Context context)
+	{
+		return context.getString(carPictureId);
+	}
+	public final String getCarCountry(Context context)
+	{
+		return context.getString(carCountryId);
+	}
+	public final String getCarBrand(Context context)
+	{
+		return context.getString(carBrandId);
+	}
 }

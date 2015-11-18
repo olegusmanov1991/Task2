@@ -29,7 +29,6 @@ public class CarAdapter extends BaseAdapter
 	private Activity mActivity;
 	LayoutInflater inflater;
 
-
 	@Override
 	public int getCount()
 	{
@@ -52,6 +51,7 @@ public class CarAdapter extends BaseAdapter
 	public View getView(int position, View convertView, ViewGroup parent)
 	{
 		ViewHolder holder;
+
 		if (convertView != null)
 		{
 			holder = (ViewHolder) convertView.getTag();
@@ -63,17 +63,15 @@ public class CarAdapter extends BaseAdapter
 			convertView.setTag(holder);
 		}
 
-
 		Glide.with(mActivity).load(Cars.values()[position].getName(mActivity)).into(holder.previewImage);
 		holder.previewImage.setScaleType(ImageView.ScaleType.FIT_CENTER);
-		holder.nameText.setText(Cars.values()[position].carBrand);
-		holder.descriptionText.setText(Cars.values()[position].carCountry);
+		holder.nameText.setText(Cars.values()[position].getCarBrand(mActivity));
+		holder.descriptionText.setText(Cars.values()[position].getCarCountry(mActivity));
 
 		return convertView;
 	}
 
 	static class ViewHolder
-
 	{
 		@Bind(R.id.fragment_car_image_view_preview)
 		ImageView previewImage;

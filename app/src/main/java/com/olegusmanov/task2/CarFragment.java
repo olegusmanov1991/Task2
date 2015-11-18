@@ -25,25 +25,20 @@ import android.support.v4.app.FragmentManager;
  */
 public class CarFragment extends Fragment implements AdapterView.OnItemClickListener
 {
-
-	CarAdapter mCarAdapter;
-
 	public static final String TAG = "CarFragment";
 
+	CarAdapter mCarAdapter;
 
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
-
 		mCarAdapter = new CarAdapter(getActivity(), getActivity().getLayoutInflater());
 
 		View view = inflater.inflate(R.layout.fragment_car, container, false);
 
 		ListView listView = (ListView) view.findViewById(R.id.fragment_car_list_view);
-
 		listView.setAdapter(mCarAdapter);
-
 		listView.setOnItemClickListener(this);
 
 		return view;

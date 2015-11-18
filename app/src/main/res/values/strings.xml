@@ -1,3 +1,60 @@
 <resources>
 	<string name="app_name">Task2</string>
+
+	<string name="name_audi">Audi</string>
+	<string name="name_bmw">BMW</string>
+	<string name="name_toyota">Toyota</string>
+	<string name="name_mercedes_benz">Mercedes-Benz</string>
+	<string name="name_ford">Ford</string>
+	<string name="name_volkswagen">Volkswagen</string>
+	<string name="name_lada">Lada</string>
+	<string name="name_lexus">Lexus</string>
+	<string name="name_ferrari">Ferrari</string>
+	<string name="name_kia">Kia Motors</string>
+
+	<string name="country_audi">Германия</string>
+	<string name="country_bmw">Германия</string>
+	<string name="country_toyota">Япония</string>
+	<string name="country_mercedes_benz">Германия</string>
+	<string name="country_ford">США</string>
+	<string name="country_volkswagen">Германия</string>
+	<string name="country_lada">Россия</string>
+	<string name="country_lexus">США</string>
+	<string name="country_ferrari">Италия</string>
+	<string name="country_kia">Южная Корея</string>
+
+
+	<string name="founder_audi">Основатель - Аугуст Хорьх</string>
+	<string name="founder_bmw">Основатель - Франц-Йозеф Попп</string>
+	<string name="founder_toyota">Основатель - Киитиро Тоёда</string>
+	<string name="founder_mercedes_benz">Основатели - Карл Бенц и Готтлиб Даймлер</string>
+	<string name="founder_ford">Основатель - Генри Форд</string>
+	<string name="founder_volkswagen">Основатель - Фердинанд Порше</string>
+	<string name="founder_lada">Основатель - Союз Советских Социалистических Республик</string>
+	<string name="founder_lexus">Основатель - Эйдзи Тойода</string>
+	<string name="founder_ferrari">Основатель - Энцо Феррари</string>
+	<string name="founder_kia">Основатель - Южная Корея</string>
+
+	<string name="models_audi">Немецкая автомобилестроительная компания в составе концерна Volkswagen Group, специализирующаяся на выпуске автомобилей под маркой Audi. Штаб-квартира расположена в Ингольштадте (Германия). Председатель совета директоров — Мартин Винтеркорн (Martin Winterkorn).</string>
+	<string name="models_bmw">Немецкий производитель автомобилей, мотоциклов, двигателей, а также велосипедов. Председателем компании на сегодняшний день является Норберт Райтхофер, а главным дизайнером — Карим Хабиб. Девиз компании на английском языке — «The Ultimate Driving Machine» и «Sheer Driving Pleasure». На русском языке — «С удовольствием за рулем».</string>
+	<string name="models_toyota">Крупнейшая японская автомобилестроительная корпорация, также предоставляющая финансовые услуги и имеющая несколько дополнительных направлений в бизнесе. Главный офис компании находится в городе Тоёта, префектура Айти (Япония). Компания занимает 9 место в Fortune Global 500 (2014 год).</string>
+	<string name="models_mercedes_benz">Торговая марка легковых автомобилей премиального класса, грузовых автомобилей, автобусов и других транспортных средств немецкого автостроительного концерна «Daimler AG». Является одним из самых узнаваемых автомобильных брендов во всём мире. Штаб-квартира Mercedes-Benz находится в Штутгарте, Баден-Вюртемберг, Германия.</string>
+	<string name="models_ford">Американская автомобилестроительная компания, производитель автомобилей под марками «Ford».Четвёртый в мире производитель автомобилей по объёму выпуска за весь период существования; в настоящее время — третий на рынке США после GM и Toyota, и второй в Европе после Volkswagen.</string>
+	<string name="models_volkswagen">Немецкая автомобильная марка, одна из многих принадлежащих концерну Volkswagen AG. Под этой маркой в 2007 году было реализовано 5 млн 20 тыс. автомобилей. Штаб-квартира в Вольфсбурге.</string>
+	<string name="models_lada">Марка автомобилей, производимых ОАО «АвтоВАЗ». Ранее использовалась лишь для автомобилей, поставляемых на экспорт, а для внутреннего потребления автомобили производились под маркой «Жигули», а затем (следующее семейство) «Спутник», которые вскоре стало называться «Лада Самара» и внутри страны. В настоящее время «АвтоВАЗом» используется написание заглавными буквами: LADA. В 2011 году главным дизайнером автомобилей Lada назначен британский дизайнер Стив Маттин.</string>
+	<string name="models_lexus">Марка автомобилей класса «премиум», производимых японской корпорацией Toyota Motor. Изначально был предусмотрен для рынка США, сейчас автомобили бренда продаются более чем в 70 странах мира.</string>
+	<string name="models_ferrari">Итальянская компания, выпускающая спортивные автомобили, базирующаяся в Маранелло. Основана в 1929 году Энцо Феррари как Scuderia Ferrari, компания спонсировала гонщиков и производила гоночные машины до 1947 года. С 1947 года начала выпуск «дорожных» (англ. street-legal) спортивных автомобилей под маркой «Ferrari S.p.A.». На протяжении всей своей истории, компания участвует в различных гонках, особенно в Формуле-1, где она имеет наибольший успех.</string>
+	<string name="models_kia">корейская автомобилестроительная компания, второй автопроизводитель в Южной Корее и седьмой в мире. В 2013 году продано почти 2,75 миллионов автомобилей KIA. Официальный слоган компании — «The Power to Surprise» («Искусство удивлять»). Название KIA расшифровывается как «Выйти из Азии во весь мир» («Войти в мир из Азии»).</string>
+
+	<string name="money_audi">Оборот компании - €48.8 млрд</string>
+	<string name="money_bmw">Оборот компании - €68,8 млрд</string>
+	<string name="money_toyota">Оборот компании - $204,1 млрд</string>
+	<string name="money_mercedes_benz">Оборот компании - €97.8 млрд</string>
+	<string name="money_ford">Оборот компании - $128,954 млрд</string>
+	<string name="money_volkswagen">Оборот компании - €20,7 млрд</string>
+	<string name="money_lada">Оборот компании - 189,4 млрд руб.</string>
+	<string name="money_lexus">Оборот компании Toyota - $204,1 млрд</string>
+	<string name="money_ferrari">Оборот компании - €1,921 млрд</string>
+	<string name="money_kia">Оборот компании - $44,3 млрд</string>
+
 </resources>

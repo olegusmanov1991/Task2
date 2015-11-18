@@ -9,5 +9,5 @@ import android.support.v4.app.FragmentActivity;
  */
 public interface ItemClickListener
 {
-	void onItemClick (int position);
+	void onItemClick(int position);
 }
