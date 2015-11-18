@@ -3,7 +3,8 @@ package com.olegusmanov.task2;
 import android.content.Context;
 
 /**
- * Created by Олег on 14.11.2015.
+ * Created by Олег on 14.11.2015 at 19:22.
+ * Project Task2
  */
 public enum Cars
 {

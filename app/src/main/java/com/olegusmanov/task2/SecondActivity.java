@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.view.ViewGroup;
 
 /**
- * Created by Олег on 15.11.2015.
+ * Created by Олег on 15.11.2015 at 19:23.
+ * Project Task2
  */
 public class SecondActivity extends FragmentActivity
 {

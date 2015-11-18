@@ -13,7 +13,8 @@ import com.bumptech.glide.Glide;
 
 
 /**
- * Created by Олег on 10.11.2015.
+ * Created by Олег on 10.11.2015 at 19:22.
+ * Project Task2
  */
 public class DescriptionFragment extends Fragment
 {

@@ -1,7 +1,6 @@
 package com.olegusmanov.task2;
 
 import android.app.Activity;
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by Олег on 10.11.2015.
+ * Created by Олег on 10.11.2015 at 19:22.
+ * Project Task2
  */
 public class CarAdapter extends BaseAdapter
 {
