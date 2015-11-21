@@ -11,6 +11,8 @@ import android.support.v4.app.FragmentManager;
  */
 public class SecondActivity extends FragmentActivity
 {
+	public static boolean onSecondActivityCreated = false;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -24,6 +26,7 @@ public class SecondActivity extends FragmentActivity
 		FragmentManager fragmentManager = getSupportFragmentManager();
 
 		descriptionFragment.change(position);
+		onSecondActivityCreated = true;
 
 		if (fragmentManager.findFragmentByTag(DescriptionFragment.TAG) != null)
 		{

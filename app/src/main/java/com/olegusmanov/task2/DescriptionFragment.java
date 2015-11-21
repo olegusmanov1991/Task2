@@ -20,12 +20,12 @@ public class DescriptionFragment extends Fragment
 {
 	public static final String TAG = "DescriptionFragment";
 
-	int number = 100;
-
+	int number;
 	public int change(int position)
 	{
 		number = position;
 		return number;
+
 	}
 
 	ImageView imageFounder;
@@ -46,7 +46,8 @@ public class DescriptionFragment extends Fragment
 		textModels = (TextView) view.findViewById(R.id.fragment_descriprion_text_view_models);
 		textMoney = (TextView) view.findViewById(R.id.fragment_descriprion_text_view_money);
 
-		if (number != 100)
+
+		if (SecondActivity.onSecondActivityCreated)
 		{
 			Glide.with(getActivity()).load(DescriptionEnum.values()[number].getDescriptionImageFounder(getActivity())).into(imageFounder);
 			textFounder.setText(DescriptionEnum.values()[number].getDescriptionTextFounder(getActivity()));

@@ -32,6 +32,8 @@ public class MainActivity extends FragmentActivity implements ItemClickListener
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		SecondActivity.onSecondActivityCreated = false;
+
 		CarFragment carFragment = new CarFragment();
 		DescriptionFragment descriptionFragment = new DescriptionFragment();
 		FragmentManager fragmentManager = getSupportFragmentManager();
