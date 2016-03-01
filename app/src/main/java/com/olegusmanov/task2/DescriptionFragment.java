@@ -21,51 +21,48 @@ public class DescriptionFragment extends Fragment
 	public static final String TAG = "DescriptionFragment";
 
 	int number;
+
 	public int change(int position)
 	{
 		number = position;
 		return number;
-
 	}
 
+	TextView textBrand;
 	ImageView imageFounder;
 	TextView textFounder;
 	ImageView imageLogo;
 	TextView textModels;
 	TextView textMoney;
+	ImageView imageBackground;
 
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
-		View view = inflater.inflate(R.layout.fragment_descriprion, container, false);
+		View view = inflater.inflate(R.layout.fragment_description, container, false);
 
-		imageFounder = (ImageView) view.findViewById(R.id.fragment_descriprion_image_view_founder);
-		textFounder = (TextView) view.findViewById(R.id.fragment_descriprion_text_view_founder);
-		imageLogo = (ImageView) view.findViewById(R.id.fragment_descriprion_image_view_logo);
-		textModels = (TextView) view.findViewById(R.id.fragment_descriprion_text_view_models);
-		textMoney = (TextView) view.findViewById(R.id.fragment_descriprion_text_view_money);
+		textBrand = (TextView) view.findViewById(R.id.fragment_description_text_view_brand);
+		imageFounder = (ImageView) view.findViewById(R.id.fragment_description_image_view_founder);
+		textFounder = (TextView) view.findViewById(R.id.fragment_description_text_view_founder);
+		imageLogo = (ImageView) view.findViewById(R.id.fragment_description_image_view_logo);
+		textModels = (TextView) view.findViewById(R.id.fragment_description_text_view_models);
+		textMoney = (TextView) view.findViewById(R.id.fragment_description_text_view_money);
+		imageBackground = (ImageView) view.findViewById(R.id.fragment_description_image_view_background);
 
-
-		if (SecondActivity.onSecondActivityCreated)
-		{
-			Glide.with(getActivity()).load(DescriptionEnum.values()[number].getDescriptionImageFounder(getActivity())).into(imageFounder);
-			textFounder.setText(DescriptionEnum.values()[number].getDescriptionTextFounder(getActivity()));
-			Glide.with(getActivity()).load(DescriptionEnum.values()[number].getDescriptionImageLogo(getActivity())).into(imageLogo);
-			textModels.setText(DescriptionEnum.values()[number].getDescriptionTextModels(getActivity()));
-			textMoney.setText(DescriptionEnum.values()[number].getDescriptionTextMoney(getActivity()));
-		}
+		init(number);
 
 		return view;
 	}
 
-	public void recreate(int position)
+	public void init(int number)
 	{
-		Glide.with(getActivity()).load(DescriptionEnum.values()[position].getDescriptionImageFounder(getActivity())).into(imageFounder);
-		textFounder.setText(DescriptionEnum.values()[position].getDescriptionTextFounder(getActivity()));
-		Glide.with(getActivity()).load(DescriptionEnum.values()[position].getDescriptionImageLogo(getActivity())).into(imageLogo);
-		textModels.setText(DescriptionEnum.values()[position].getDescriptionTextModels(getActivity()));
-		textMoney.setText(DescriptionEnum.values()[position].getDescriptionTextMoney(getActivity()));
+		textBrand.setText(Cars.values()[number].getCarBrand(getActivity()));
+		Glide.with(getActivity()).load(DescriptionEnum.values()[number].getDescriptionImageFounder(getActivity())).into(imageFounder);
+		textFounder.setText(DescriptionEnum.values()[number].getDescriptionTextFounder(getActivity()));
+		Glide.with(getActivity()).load(DescriptionEnum.values()[number].getDescriptionImageLogo(getActivity())).into(imageLogo);
+		textModels.setText(DescriptionEnum.values()[number].getDescriptionTextModels(getActivity()));
+		textMoney.setText(DescriptionEnum.values()[number].getDescriptionTextMoney(getActivity()));
+		Glide.with(getActivity()).load(DescriptionEnum.values()[number].getDescriptionImageBackground(getActivity())).into(imageBackground);
 	}
-
 }

@@ -1,5 +1,8 @@
 package com.olegusmanov.task2;
 
+import java.util.List;
+
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -36,6 +39,7 @@ public class CarFragment extends Fragment implements AdapterView.OnItemClickList
 	}
 
 
+
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id)
 	{
@@ -44,6 +48,7 @@ public class CarFragment extends Fragment implements AdapterView.OnItemClickList
 		if (activity instanceof ItemClickListener)
 		{
 			((ItemClickListener) activity).onItemClick(position);
+			MainActivity.sPositionTurn = position;
 		}
 	}
 }

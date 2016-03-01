@@ -58,7 +58,7 @@ public class CarAdapter extends BaseAdapter
 		}
 		else
 		{
-			convertView = inflater.inflate(R.layout.adapter_car, parent, false);
+			convertView = inflater.inflate(R.layout.item_car, parent, false);
 			holder = new ViewHolder(convertView);
 			convertView.setTag(holder);
 		}

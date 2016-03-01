@@ -34,5 +34,15 @@
 	<string name="url_logo_ferrari">http://www.car-brand-names.com/wp-content/uploads/2015/03/Ferrari-emblem.jpg</string>
 	<string name="url_logo_kia">http://www.zeroto60times.com/blog/wp-content/uploads/2013/02/kia-cars-logo-emblem.jpg</string>
 
+	<string name="url_bg_audi">http://www.sgsmith.co.uk/audi/img/new-cars/A7-Sportsback/1.png</string>
+	<string name="url_bg_bmw">http://image.automobilemag.com/f/63016904+w660+h440+q80+re0+cr1+ar0+st0/alpine-white.png</string>
+	<string name="url_bg_toyota">http://elementarycarrental.com/wp-content/uploads/2015/01/2014-toyota-camry-png2.png</string>
+	<string name="url_bg_mercedes_benz">http://assets.mbusa.com/vcm/MB/DigitalAssets/AMG_ThemePage/Responsive/Models/2015-CLS-CLASS-CLS63-AMG-COUPE-THEME-940x600.png</string>
+	<string name="url_bg_ford">http://2.im-cdn.billestesford.inspirelightning.com/stock-images/bd7824ee8861b4f8a777f349b53e8895.png</string>
+	<string name="url_bg_volkswagen">http://nnov.vamdetal.ru/img/cars/big/volkswagen/volkswagen-passat-cc.png</string>
+	<string name="url_bg_lada">http://евро-дилер.рф/wp-content/uploads/2015/09/lada-priora-color-3.png</string>
+	<string name="url_bg_lexus">http://image.intellichoice.com/f/57355850/lexus</string>
+	<string name="url_bg_ferrari">http://static1.squarespace.com/static/54224325e4b06733ce007d4d/t/5495dc29e4b07bc57781af20/1419107375351/Ferrari+F458+White.png</string>
+	<string name="url_bg_kia">http://carspravka.ru/images/auto/96e36b8663c4542d0f9f2eeefd16983b.png</string>
 
 </resources>

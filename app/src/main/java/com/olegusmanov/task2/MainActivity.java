@@ -4,24 +4,24 @@ import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 
 public class MainActivity extends FragmentActivity implements ItemClickListener
 {
+	public static int sPositionTurn;
+
 	@Override
 	public void onItemClick(int position)
 	{
-		DisplayMetrics mDisplayMetrics = getResources().getDisplayMetrics();
-		if (mDisplayMetrics.widthPixels < 720)
+		if (!getResources().getBoolean(R.bool.screen_width))
 		{
 			Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-			intent.putExtra("pos", position);
+			intent.putExtra(SecondActivity.KEY_POS, position);
 			startActivity(intent);
 		}
 		else
 		{
 			DescriptionFragment fragmentByTag = (DescriptionFragment) getSupportFragmentManager().findFragmentByTag(DescriptionFragment.TAG);
-			fragmentByTag.recreate(position);
+			fragmentByTag.init(position);
 		}
 	}
 
@@ -32,14 +32,12 @@ public class MainActivity extends FragmentActivity implements ItemClickListener
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		SecondActivity.onSecondActivityCreated = false;
-
 		CarFragment carFragment = new CarFragment();
 		DescriptionFragment descriptionFragment = new DescriptionFragment();
 		FragmentManager fragmentManager = getSupportFragmentManager();
 
-		DisplayMetrics mDisplayMetrics = getResources().getDisplayMetrics();
-		if (mDisplayMetrics.widthPixels > 720)
+
+		if (getResources().getBoolean(R.bool.screen_width))
 		{
 			if (fragmentManager.findFragmentByTag(CarFragment.TAG) == null)
 			{
@@ -50,6 +48,7 @@ public class MainActivity extends FragmentActivity implements ItemClickListener
 
 			if (fragmentManager.findFragmentByTag(DescriptionFragment.TAG) == null)
 			{
+				descriptionFragment.change(sPositionTurn);
 				fragmentManager.beginTransaction()
 						.add(R.id.container, descriptionFragment, DescriptionFragment.TAG)
 						.commit();
@@ -69,6 +68,11 @@ public class MainActivity extends FragmentActivity implements ItemClickListener
 				fragmentManager.beginTransaction()
 						.remove(getSupportFragmentManager().findFragmentByTag(DescriptionFragment.TAG))
 						.commit();
+
+
+				Intent intent1 = new Intent(MainActivity.this, SecondActivity.class);
+				intent1.putExtra(SecondActivity.KEY_POS, sPositionTurn);
+				startActivity(intent1);
 			}
 		}
 	}
